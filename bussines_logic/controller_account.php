@@ -1,13 +1,13 @@
 <?php 
-	require_once('../data_layer/modelos/usuario.php');
-	require_once('../bussines_logic/class_security.php');
-	//require_once('crud_users.php');
-	//require_once('../datalayer/conexion_db.php');
+    require_once('../data_layer/modelos/usuario.php');
+    require_once('../bussines_logic/class_security.php');
+    //require_once('crud_users.php');
+    //require_once('../datalayer/conexion_db.php');
 
 	//inicio de sesion
 	session_start();
 
-	$objModelUser = new Usuario();  //Modelo de Usuarios
+	$objModelUser = new Usuario();  //Objeto Modelo de Usuarios
 	$objBussinesLogic = new Seguridad(); //Objeto de Clase Seguridad
 	//SI ES PARA REGISTRARSE
 	if (isset($_POST['registrarse'])) {
@@ -18,7 +18,7 @@
 		$objModelUser->setClave($_POST['clave']);
 
         //
-        $respuesta = $objBussinesLogic->registrar_usuarios($objModelUser);
+        $respuesta = $objBussinesLogic -> registrar_usuarios($objModelUser);
         echo $respuesta;    
 
 		//$crud->insertar($objModelUser);

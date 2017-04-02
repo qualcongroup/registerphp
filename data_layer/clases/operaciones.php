@@ -1,15 +1,15 @@
 <?php
-	class Operaciones{
+class Operaciones{
 
-    /*Procesa las operaciones
-     Parametros: $prmParametrosProcesar
-     enumOperacion Operacion
-     string StringSQL
-     string NombreSP
-     public List<struParametrosValor> ListaParametros { get; set; } (ojo implementar)
-     bool DevuelveValor
-     string MsgError
-    */  
+/*Procesa las operaciones
+ Parametros: $prmParametrosProcesar
+ enumOperacion Operacion
+ string StringSQL
+ string NombreSP
+ public List<struParametrosValor> ListaParametros { get; set; } (ojo implementar)
+ bool DevuelveValor
+ string MsgError
+*/  
 public function procesar_operacion(&$parametrosProcesar, $camposValores){
     
     $resultado = null;
@@ -46,9 +46,7 @@ public function procesar_operacion(&$parametrosProcesar, $camposValores){
 
 }// fin procesar_operaciones
 
-		public function test_conexion_bd(&$prmMsgError)
-        {
-
+public function test_conexion_bd(&$prmMsgError){
             //$resultado = 'false';
             //Obtiene los parametros de configuración de la base de datos para saber que manejador utilizar
             require_once('config/database.php');
@@ -74,5 +72,5 @@ public function procesar_operacion(&$parametrosProcesar, $camposValores){
 
         }
 		
-	} //Fin clase
+} //Fin clase Operaciones
 ?>
