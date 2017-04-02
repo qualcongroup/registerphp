@@ -1,0 +1,237 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mes",
+				"meses"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"categ",
+				"category_panel"
+			],
+			[
+				"el_",
+				"el_img"
+			],
+			[
+				"b",
+				"bcategory"
+			],
+			[
+				"val",
+				"valor2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/Victor Cordero/Downloads/Pregunta 4/Pregunta 4/Factorial.php",
+		"/C/xampp/htdocs/infobase/resources/views/welcome.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/auth/passwords/email.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/auth/register.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/layouts/partials/mainheader.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/layouts/partials/htmlheader.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/auth/passwords/reset.blade.php",
+		"/C/xampp/htdocs/infobase/resources/views/vendor/adminlte/auth/terms.blade.php",
+		"/C/xampp/htdocs/infobase/public/index.php",
+		"/C/IngresoPaciente/index.html",
+		"/C/IngresoPaciente/ordenes.html",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/functions/upload_extraproducts.php",
+		"/C/Users/Victor Cordero/Downloads/GeneradorDePresupuestos/config.utl",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/assets/css/styleimgmodal.css",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/functions/upload_excel.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard_client.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard_extraproducts.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel de fragancias viejo/panel de fragancias mas nuevo/dashboard_client.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard_excel.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard_admin.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/ModalView/index.html",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/functions/pruebacorreo.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/dashboard_prestashop.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/list_price_b.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel reciente/web/functions/type_a.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/dashboard_client.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/dashboard.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/login.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/list_price_b.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/type_a.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/web/web/list_users_a.php",
+		"/C/Users/Victor Cordero/Desktop/Ejercicios Mamagallo/figuras.html",
+		"/C/Users/Victor Cordero/Desktop/Ejercicios Mamagallo/prompt.html",
+		"/C/Users/Victor Cordero/Desktop/Ejercicios Mamagallo/fomulario.html",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel de fragancias mas nuevo/panel de fragancias mas nuevo/index.php",
+		"/C/Users/Victor Cordero/Desktop/Eric Freelancer/panel de fragancias mas nuevo/panel de fragancias mas nuevo/edit_customer.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"INSERT INTO product ",
+			"produc",
+			"sync_products",
+			"$prod_id",
+			"sync_products",
+			":<"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 330.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
