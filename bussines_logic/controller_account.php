@@ -19,7 +19,8 @@
 
         //
         $respuesta = $objBussinesLogic -> registrar_usuarios($objModelUser);
-        echo $respuesta;    
+        
+        echo "La respuesta es: ". $respuesta['@prm_id_user'];
 
 		//$crud->insertar($objModelUser);
 		//header('Location: login.php');

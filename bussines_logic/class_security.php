@@ -24,28 +24,24 @@ class Seguridad {
         //'stringSQL' => "SP_REGISTRAR_USUARIOS (:prm_XMLParametros,:prm_operacion,@prm_id_user)",
         require_once('../data_layer/modelos/general.php');
         $parametrosProcesar = array('Operacion' => EnumOperacion::STORED_PROCEDURE, 
-                               'stringSQL' => "SP_REGISTRAR_USUARIOS (:prm_XMLParametros,:prm_operacion)",
-                               'devuelveValor' => false,
+                               'stringSQL' => "SP_REGISTRAR_USUARIOS (:prm_XMLParametros,:prm_operacion,@prm_id_user);",
+                               'devuelveValor' => true,
                                'MsgError' => ''
                                );
         $camposValores = array();
         $camposValores[0] = array('nombre'=>':prm_XMLParametros', 'tipo'=>PDO::PARAM_STR, 'valor'=> $xmlData, 'direccion' => 'IN');
         $camposValores[1] = array('nombre'=>':prm_operacion', 'tipo'=>PDO::PARAM_STR, 'valor'=> "INSERTAR",'direccion'=>'IN');
-        //$camposValores[2] = array('nombre'=>'@prm_id_user', 'tipo'=>PDO::PARAM_INT, 'valor'=> "ninguno", 'direccion'=> 'OUT');
+        $camposValores[2] = array('nombre'=>'@prm_id_user', 'tipo'=>PDO::PARAM_INT, 'valor'=> 0, 'direccion'=> 'OUT');
         try{
                        
            $datosObtenidos = $objDataLayer -> Procesar_Operacion($parametrosProcesar, $camposValores);
           
            if(strlen($parametrosProcesar['MsgError']) > 0){
-             $respuesta = $parametrosProcesar['MsgError'];
-             echo $respuesta;
+              $respuesta = $parametrosProcesar['MsgError'];
            }
-            else {
-              echo "bien";
-            }
-
-
-          //$respuesta = $datosObtenidos;
+           else{
+               $respuesta = $datosObtenidos;
+           }
 
           /*if (strlen(enviarParametrosSP['MsgError']) > 0)
             {
@@ -69,6 +65,7 @@ class Seguridad {
               "Ocurrido en: " + Environment.NewLine +
               MethodBase.GetCurrentMethod().DeclaringType.FullName + "." + MethodBase.GetCurrentMethod().Name;*/
         }
+        return $respuesta;
     } //Fin funcion registrar_usuarios
 	
 }//Fin Class Seguridad

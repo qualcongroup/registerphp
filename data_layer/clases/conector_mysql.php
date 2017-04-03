@@ -36,8 +36,10 @@ public function Ejecutar_Stored_Procedure(&$parametrosProcesar, $camposValores){
             $statement = $objDB->prepare("CALL ".$parametrosProcesar['stringSQL']);
             //Agrega los parametros y los valores
             foreach($camposValores as $campo){
-                   $statement -> bindValue($campo['nombre'], $campo['valor'], $campo['tipo']);
-                   //$statement -> bindValue($campo['nombre'], $campo['valor']);
+                if ($campo['direccion'] == 'IN'){
+                   //$statement -> bindParam($campo['nombre'], $campo['valor'], $campo['tipo']);
+                   $statement -> bindParam($campo['nombre'], $campo['valor']);
+                }
             }
 
             // Ejecuta el stored procedure
@@ -46,7 +48,8 @@ public function Ejecutar_Stored_Procedure(&$parametrosProcesar, $camposValores){
             if($parametrosProcesar['devuelveValor'] == true){ //Si devuelve valor
                 foreach($camposValores as $campo){
                     if ($campo['direccion'] == 'OUT'){
-                        $resultado = array($campo['nombre'] => $objDB->query("SELECT ".$campo['nombre'])->fetch(PDO::FETCH_ASSOC));
+                        $valor = $objDB -> query("SELECT ".$campo['nombre'])->fetch(PDO::FETCH_ASSOC);
+                        $resultado = array($campo['nombre'] => $valor);
                     }
                 }
             }
@@ -63,6 +66,7 @@ public function Ejecutar_Stored_Procedure(&$parametrosProcesar, $camposValores){
     catch (Exception $errException)
     {
         $resultado = array('resultado' =>  false);
+        //$resultado = array('resultado' =>  false);
         $parametrosProcesar['MsgError'] =  $errException->getMessage();
     }
 

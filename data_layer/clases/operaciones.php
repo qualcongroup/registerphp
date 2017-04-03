@@ -24,15 +24,15 @@ public function procesar_operacion(&$parametrosProcesar, $camposValores){
             //llama la clase conector mysql
             switch ($parametrosProcesar['Operacion']) {
              	//-----------------SELECCIONAR----------------------------------------
-        	    case EnumOperacion::SELECCIONAR:
-        	        echo "es igual a SELECCIONAR";
-        	        break;
-        	    //------------------INSERTAR, MODIFICAR, ELIMINAR---------------------
-        		case EnumOperacion::ACTUALIZAR:
-        		    echo "es igual a INSERTAR, MODIFICAR, ELIMINAR";
-        		    break;
-        		//------------------STORED PROCEDURE----------------------------------
-        		case EnumOperacion::STORED_PROCEDURE:
+        	case EnumOperacion::SELECCIONAR:
+        	     echo "es igual a SELECCIONAR";
+        	     break;
+        	//------------------INSERTAR, MODIFICAR, ELIMINAR---------------------
+        	case EnumOperacion::ACTUALIZAR:
+        	    echo "es igual a INSERTAR, MODIFICAR, ELIMINAR";
+        	    break;
+        	//------------------STORED PROCEDURE----------------------------------
+        	case EnumOperacion::STORED_PROCEDURE:
         					        
                     $resultado = $objConectorMySQL->Ejecutar_Stored_Procedure($parametrosProcesar, $camposValores);
                     break;
