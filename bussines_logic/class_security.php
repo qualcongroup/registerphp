@@ -1,6 +1,6 @@
 <?php
 /**
-* 
+* Victor Cordero - 2017
 */
 class Seguridad {
 
